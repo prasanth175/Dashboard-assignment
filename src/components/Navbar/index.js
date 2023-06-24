@@ -8,7 +8,6 @@ import ProfileContext from '../../profileContext';
 const Navbar = () => {
   const [search, setSearch] = useState('');
   const profileObj = useContext(ProfileContext);
-  console.log('love')
   console.log(profileObj)
 
   const onSearch = (event) => setSearch(event.target.value);

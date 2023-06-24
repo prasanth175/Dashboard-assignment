@@ -4,9 +4,7 @@ import { gapi } from 'gapi-script';
 import './App.css';
 import LoginPage from './components/LoginPage';
 import Home from './components/Home';
-
-// Create the ProfileContext
-const ProfileContext = React.createContext();
+import ProfileContext from './profileContext'; // Import the ProfileContext
 
 const clientId = '75030971780-pjohi0mlucn3u0snvbit9jfgrbplnra4.apps.googleusercontent.com';
 
@@ -27,8 +25,6 @@ const App = () => {
   const updateProfileObj = (newProfileObj) => {
     setProfileObj(newProfileObj);
   };
-
-  console.log(profileObj)
 
   return (
     <ProfileContext.Provider value={profileObj}>
