@@ -1,0 +1,11 @@
+.home-container{
+    display: flex;
+    margin: 30px;
+    height: 93vh;
+    background-color: #f5f5f5;
+}
+
+.bottom-container{
+    display: flex;
+    align-items: center;
+}
